@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Project</title>
+ <style>
+   
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #000000;
+    color: rgb(150, 96, 96);
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 1rem;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+    .nav-list {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 1.5rem;
+    }
+  }
+ </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Design</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+      </div>
+    </section>
+    <section class="container">
+      <h2>Responsive Images</h2>
+      <img src="img.jpg" alt=" Image">
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Responsive Design</p>
+  </footer>
+</body>
+</html>
